@@ -1,7 +1,7 @@
 # ETL pipeline -Udacity DEND capstone project
 
 #### Project Summary
-The project goal is to build an ETL pipeline by gather desparate data in different sources, and transform and load to Amazon S3 cluster. In this project, I will create a clean dataset that consists of the US immigration data, US state demographics, weather information and airport data. The result dataset could be used for further analysis of identifying trends in travel and immigration to the US. 
+The project goal is to build an ETL pipeline by gathering disparate data in different sources, and transform and load to Amazon S3 cluster. In this project, I will create a clean dataset that consists of the US immigration data, US state demographics, weather information and airport data. The result dataset could be used for further analysis of identifying trends in travel and immigration to the US. 
 
 The project follows the follow steps:
 * Step 1: Scope the Project and Gather Data
@@ -22,9 +22,9 @@ In order to run the project, download datasets from soruces listed below. I have
 In this project, I will create a clean dataset that consists of the US immigration data, US state demographics, weather information and airport data. The result dataset could be used for further analysis of identifying trends in travel and immigration to the US. I used Apache Spark to process the data. I also used Python, Pandas, Matplotlib and Pyspark. This version of the project reads and writes to local directory. However, it can easily be updated to read data from Amazon S3 and write back the processed data to Amazon S3. To do so, will need to point input_data and output_data variables to proper address on S3. Whole project can be run through this note book or etl.py.
 
 #### Describe and Gather Data 
-*I94 Immigration Data:* This data comes from the US National Tourism and Trade Office. A data dictionary is included in the workspace. This is where the data comes from. There's a sample file so you can take a look at the data in csv format before reading it all in. You do not have to use the entire dataset, just use what you need to accomplish the goal you set at the beginning of the project.
+*I94 Immigration Data:* This data comes from the US National Tourism and Trade Office. A data dictionary is included in the workspace. This is [where](https://travel.trade.gov/research/reports/i94/historical/2016.html) the data comes from. There's a sample file so you can take a look at the data in csv format before reading it all in. 
 
-*World Temperature Data:* This dataset came from Kaggle. You can read more about it [here](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data). I used temperature data *by State* version.
+*World Temperature Data:* This dataset came from Kaggle. You can read more about it [here](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data). I used temperature data *by State* version. For this project, I used only data from April, 2016. But I partitioned the clean dataframes so that I could potentially consume immigration data for many months and years.
 
 *U.S. City Demographic Data:* This data comes from OpenSoft. You can read more about it [here](https://public.opendatasoft.com/explore/dataset/us-cities-demographics/export/).
 
