@@ -1,3 +1,5 @@
+# ETL pipeline -Udacity DEND capstone project
+
 #### Project Summary
 The project goal is to build an ETL pipeline by gather desparate data in different sources, and transform and load to Amazon S3 cluster. In this project, I will create a clean dataset that consists of the US immigration data, US state demographics, weather information and airport data. The result dataset could be used for further analysis of identifying trends in travel and immigration to the US. 
 
@@ -130,4 +132,3 @@ Below is a data dictionary for my data model. For each field, I provided a brief
 - arrival_month: Month of arrivel 
 - arrival_year: Year of arrival
 - arrival_weekday: Week day of arrival# ETL-pipeline--Udacity-DEND-capstone-project
-# ETL-pipeline--Udacity-DEND-capstone-project
