@@ -131,4 +131,4 @@ Below is a data dictionary for my data model. For each field, I provided a brief
 - arrival_week: Week of arrival 
 - arrival_month: Month of arrivel 
 - arrival_year: Year of arrival
-- arrival_weekday: Week day of arrival# ETL-pipeline--Udacity-DEND-capstone-project
+- arrival_weekday: Week day of arrival
